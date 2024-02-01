@@ -1,0 +1,30 @@
+.footer__form {
+    margin-bottom: 8px;
+}
+
+.input {
+    width: 323px;
+    min-height: 48px;
+    padding: 14px 16px;
+    border: 1px solid rgba(157, 157, 157, 0.2);
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.input::placeholder {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    color: #9D9D9D;
+}
+
+.btn {
+    width: 64px;
+    min-height: 48px;
+    margin-left: -3px;
+    background-color: #16C8BB;
+    border-radius: 4px;
+    border: none;
+    position: absolute;
+    cursor: pointer;
+}
