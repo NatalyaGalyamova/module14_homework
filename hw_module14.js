@@ -45,7 +45,7 @@ const secondStudentAge = secondStudent.querySelector('age');
 const secondStudentProf = secondStudent.querySelector('prof');
 const secondStudentLang = secondStudentName.getAttribute('lang');
 
-const result = {
+const result1 = {
     list: [{
         name: firstStudentFirstName.textContent + ' ' + firstStudentLastName.textContent,
         age: Number(firstStudentAge.textContent),
@@ -59,4 +59,41 @@ const result = {
     }]
 }
 
-console.log('result', result)
+console.log('result1', result1)
+
+//Задание 2
+
+const jsonString = `
+{
+    "list": [
+     {
+      "name": "Petr",
+      "age": "20",
+      "prof": "mechanic"
+     },
+     {
+      "name": "Vova",
+      "age": "60",
+      "prof": "pilot"
+     }
+    ]
+}
+`;
+
+const data = JSON.parse(jsonString);
+
+const list = data.list;
+
+const result2 = {
+    list: [{
+        name: list[0].name,
+        age: Number(list[0].age),
+        prof: list[0].prof,
+    }, {
+        name: list[1].name,
+        age: Number(list[1].age),
+        prof: list[1].prof,
+    }]
+};
+
+console.log('result2', result2);
